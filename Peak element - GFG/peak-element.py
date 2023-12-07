@@ -2,6 +2,10 @@
 # function should return index to the any valid peak element
 class Solution:   
     def peakElement(self,arr, n):
+        
+        m = max(arr)
+        return arr.index(m)
+        
         # Code here
         # if n==1:                    #when only one element is present
         #     return 0
@@ -16,9 +20,6 @@ class Solution:
         #         return i
             
         # return -1
-        
-        m = max(arr)
-        return arr.index(m)
 
 
 
